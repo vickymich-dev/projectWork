@@ -1,0 +1,133 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+h1,
+h2,
+h3 {
+  font-weight: 900;
+}
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+/* BUTTONS */
+.btn-outline-secondary {
+  color: #011627 !important;
+  border-radius: 0;
+  border-color: #011627 !important;
+  background-color: transparent !important;
+  position: relative;
+}
+.btn-outline-secondary:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #b3f3ed;
+  transition: 0.5s;
+  height: 100%;
+  width: 0%;
+  z-index: -1;
+}
+.btn-outline-secondary:hover:before {
+  width: 100%;
+}
+.btn-secondary {
+  border-color: #011627 !important;
+  background-color: #011627 !important;
+  border-radius: 0;
+}
+.btn-secondary:hover {
+  color: #b3f3ed !important;
+}
+.btn-primary {
+  border-radius: 0;
+  background-color: #b3f3ed !important;
+  border-color: #b3f3ed !important;
+  color: #011627 !important;
+}
+.btn-primary:hover {
+  background-color: #011627 !important;
+  color: #b3f3ed !important;
+}
+
+/* navbar */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+}
+.nav-link, .navbar-brand{
+  color: #011627;
+}
+.nav-link:hover, .navbar-brand:hover{
+  color: #7777;
+}
+.navbar-brand{
+  font-size: 1.8rem;
+}
+
+/* call to action */
+.call-to-action{
+  background-color: #011627;
+  color: #fafaff;
+}
+.heading-line{
+  background-color: #b3f3ed;
+  height: 3px;
+  width: 10%;
+}
+
+/* services */
+.row i{
+  color: #b3f3ed;
+  font-size: 2rem;
+} 
+
+/* portfolio */
+.portfolio .img-fluid{
+  height: 300px;
+  object-fit: cover;
+}
+.dark{
+  background: #011627;
+  color: #b3f3ed;
+  height: 300px;
+}
+.dark i{
+  font-size: 1.3rem;
+  color: #b3f3ed;
+} 
+.portfolio .col-lg-3{
+  position: relative;
+}
+.filter{
+  position: absolute;
+  opacity: 0.5;
+  background: #b3f3ed;
+  height: 100%;
+  width: 100%;
+}
+/* footer */
+.footer{
+  background: #011627;
+  color: #fafaff; 
+}
+.footer a{
+  color: #fafaff;
+}
+
+/* responsive */
+@media(max-width: 900px){
+  .navbar .nav-item{
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+
+  }
+  .call-to-action .container{
+    width: 100% !important;
+  }
+} 
